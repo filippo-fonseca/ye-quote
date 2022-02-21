@@ -1,12 +1,12 @@
 {
-  "name": "ts-npm-template",
-  "version": "1.0.0",
-  "repository": "https://github.com/alii/ts-npm-template",
-  "author": "Alistair Smith <alistairsmith01@gmail.com>",
+  "name": "ye-quote",
+  "description": "A TypeScript wrapper for fetching a random Kanye West quote.",
+  "version": "0.0.1",
+  "repository": "https://github.com/filippo-fonseca/ye-quote",
+  "author": "Filippo Fonseca <filifonsecacagnazzo@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "eslint . --fix&&jest",
-    "prepublishOnly": "npm run test&&npm run build",
+    "prepublishOnly": "npm run build",
     "build": "tsc"
   },
   "main": "dist/index.js",
