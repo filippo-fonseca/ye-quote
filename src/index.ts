@@ -1,9 +1,13 @@
+import axios from "axios";
+
 /**
- * A highly complex function that adds two numbers together.
- * @param a The first number
- * @param b The second number
- * @return The two numbers added together
+ * An *incredibly* complex and *high-tier* function for fetching a random Kanye West quote.
  */
-export function add(a: number, b: number) {
-  return a + b;
+export async function getRandomKanyeQuote() {
+  try {
+    const response = await axios.get(`https://api.kanye.rest/`);
+    return response.data.quote;
+  } catch (error) {
+    return error;
+  }
 }
